@@ -92,6 +92,12 @@ simulates a refund action:
 
 
 
+
+
+
+
+
+
 Example 1 
 <img width="596" height="366" alt="transcript and interaction 1" src="https://github.com/user-attachments/assets/201d8e8d-84ea-4bc9-b124-4e6b8b34fad0" />
 
