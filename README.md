@@ -1,4 +1,4 @@
-![IMG_0495](https://github.com/user-attachments/assets/21e6f49a-a09c-41cf-9fd9-06d823bdd859)# Building-a-Multi-Agent-AI-System-for-Real-World-Applications-Customer-Care-Team-Goal
+Building-a-Multi-Agent-AI-System-for-Real-World-Applications-Customer-Care-Team-Goal
 
 This project implements a multi-agent Customer Care Team that handles complex customer inquiries end-to-end, going beyond simple Q&A.
 
