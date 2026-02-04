@@ -11,7 +11,7 @@ Use Case: Customer Care Automation
 
 the goal is to Handle customer issues such as refunds, billing disputes, damaged orders, and account problems through coordinated agent collaboration
 
-#requirments and bnefits
+#requirments and benefits
 
 -Customer support requires multiple skills (classification, policy lookup, empathy, action, QA)
 
@@ -42,9 +42,9 @@ python src/main.py
 
 the output will show agent's actions and decsisons are stremed directly streamed to the terminal and also interation trascripits are automatically saved in (on bash) .
 /transcripts/
-  ├── transcript_1.txt
-  ├── transcript_2.txt
-  └── transcript_3.txt
+  ─ transcript_1.txt
+  ─ transcript_2.txt
+  ─ transcript_3.txt
 
 Transcripts showing collaboration to create an output to prove that the agent creation and process is eligable
 
