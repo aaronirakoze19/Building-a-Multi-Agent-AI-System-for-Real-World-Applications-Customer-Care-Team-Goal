@@ -1,6 +1,6 @@
 Building-a-Multi-Agent-AI-System-for-Real-World-Applications-Customer-Care-Team-Goal
 
-This project implements a multi-agent Customer Care Team that handles complex customer inquiries end-to-end, going beyond simple Q&A.
+This project implements a multi-agent Customer Care Team that handles complex customer inquiries end to end.
 
 It uses a supervisor-orchestrated multi-agent architecture inspired by Microsoft AutoGen’s conversational style, with clearly specialized agents, shared state, tool use, escalation, and quality review.
 
