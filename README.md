@@ -1,5 +1,6 @@
+Aaron Irakoze Ruharo -672515
 
-Building-a-Multi-Agent-AI-System-for-Real-World-Applications-Customer-Care-Team-Goal
+Building a Multi Agent
 
 This project implements a multi-agent Customer Care Team that handles complex customer inquiries end to end. Using Python 3.11 using a lightweight and modular set of libraries. Core Python modules such as dataclasses and typing were used to define structured agent roles and ensure clear, maintainable code. Environment configuration and security were handled using os and python-dotenv, allowing sensitive values like API keys to be managed safely outside the source code. Optional integration with the openai Python SDK (which is a set of Python tools that lets you easily use a service or API without handling low-level details.) which enables live interaction with external language models when required.
 
