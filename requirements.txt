@@ -1,0 +1,4 @@
+python-dotenv
+autogen-agentchat==0.7.5
+autogen-core==0.7.5
+autogen-ext==0.7.5
