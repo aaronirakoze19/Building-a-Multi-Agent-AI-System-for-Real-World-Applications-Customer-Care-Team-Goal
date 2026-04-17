@@ -1,4 +1,4 @@
-Customer care agent (Health care)
+Customer care agent
 
 This demonstrates a multi-agent artificial intelligence system designed to simulate how a real-world customer care team operates. Instead of using a single AI model to handle everything, the system is structured as a pipeline of specialized agents, each responsible for a specific task. This approach makes the system more organized, reliable, and closer to real-world customer support workflows.
 
