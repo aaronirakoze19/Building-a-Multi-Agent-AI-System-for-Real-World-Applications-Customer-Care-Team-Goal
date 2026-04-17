@@ -1,0 +1,33 @@
+=== USER ===
+charged for my subscription twice
+
+--- Greeter Output (Greeter / Intent Classifier) ---
+Intent: Refund/Billing
+
+--- Researcher Output (Knowledge Retriever) ---
+Policy found: Refunds are allowed within 14 days of purchase if the item or service has not been fully used or activated. Billing complaints such as double charges can be reviewed and may qualify for a refund after verification.
+
+--- Empath Output (Tone Adapter) ---
+I understand your concern, and I’m sorry for the inconvenience. I’ll do my best to help resolve this for you as quickly as possible.
+
+--- Resolver Draft (Action Taker) ---
+TOOL: refund
+TOOL_INPUT: billing_case
+Action: A refund request has been prepared and would now move to verification of the billing details before final approval.
+
+--- Tool Execution ---
+TOOL: refund
+TOOL_INPUT: billing_case
+TOOL_RESULT: Refund tool simulated: would process refund after verifying order details.
+
+--- Quality Review Final (Quality Reviewer) ---
+QA: PASS - The response is polite, clear, safe, and aligned with policy.
+
+=== FINAL CUSTOMER RESPONSE ===
+I understand your concern, and I’m sorry for the inconvenience. I’ll do my best to help resolve this for you as quickly as possible.
+
+Policy found: Refunds are allowed within 14 days of purchase if the item or service has not been fully used or activated. Billing complaints such as double charges can be reviewed and may qualify for a refund after verification.
+
+TOOL: refund
+TOOL_INPUT: billing_case
+Action: A refund request has been prepared and would now move to verification of the billing details before final approval.

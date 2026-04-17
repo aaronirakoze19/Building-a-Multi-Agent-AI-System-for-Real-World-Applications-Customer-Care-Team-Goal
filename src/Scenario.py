@@ -1,13 +1,10 @@
-from pathlib import Path
-from datetime import datetime
-
-from mock_llm import mock_llm_call
 from agents import build_agents
+from mock_llm import mock_llm_call
 from supervisor import run_supervisor
 
+from pathlib import Path
 
 def refund_tool(call_text: str) -> str:
-    # fake tool action (for demo purposes)
     return "Refund tool simulated: would process refund after verifying order details."
 
 def callback_tool(call_text: str) -> str:
@@ -26,20 +23,17 @@ Refund Policy (Demo):
 """
 
 
-def main():
+def run_scenario():
     agents = build_agents(mock_llm_call)
 
-    out_dir = Path("transcripts")
-    out_dir.mkdir(exist_ok=True)
-
-    print("Customer Care Multi-Agent Chatbot")
-    print("Type your message below. Type 'exit' to quit.\n")
+    print("=== Customer Care Scenario ===")
+    print("Type your issue. Type 'exit' to stop.\n")
 
     while True:
         user_msg = input("User ; ")
 
         if user_msg.lower() in ["exit", "quit"]:
-            print("Agent ; Goodbye! Thank you for contacting customer support.")
+            print("Agent ; Thank you for contacting support. Goodbye!")
             break
 
         state = {
@@ -49,15 +43,12 @@ def main():
 
         transcript = run_supervisor(state, agents, TOOLS)
 
-        fp = out_dir / "live_chat.txt"
-        fp.write_text(transcript, encoding="utf-8")
-
         print("\nAgent ;")
         print(state.get("final_response", transcript))
-        print(f"\nSaved -> {fp}\n")
+        print("\n" + "-" * 50 + "\n")
 
 
 if __name__ == "__main__":
-    main()
-    
-#python src/main.py
+    run_scenario()
+
+#python src/Scenario.py

@@ -85,3 +85,15 @@ def build_agents(llm_call: LLMCall) -> Dict[str, Agent]:
         "escalator": Agent("Escalator", escalator_prompt, llm_call),
         "qa": Agent("Quality Reviewer", qa_prompt, llm_call),
     }
+
+def mock_llm(role, prompt, state):
+    return f"{role} executed"
+
+if __name__ == "__main__":
+    agents = build_agents(mock_llm)
+    state = {}
+
+    for name, agent in agents.items():
+        print(f"{name.upper()} OUTPUT:\n{agent.run(state)}\n")
+
+#python src/agents.py
